@@ -18,11 +18,13 @@ We convert the DataFrames containing the data for the categories and subcategori
 
 This DataFrame requires us to modify the `crowdfunding.xlsx` Excel data. The initial format of the data appears as:
 
-![Campaign Before](./dataframe_before.png)
+![pre-processing df](./pre-processing.png)
 
-Certain columns are to be renamed only, while others are both renamed and converted to a different data format. The final campaign DataFrame resembles the following:
+Certain columns are to be renamed only, while others are both renamed and converted to a different data format. Lastly, the campaign DataFrame is merged with the category and subcategory DataFrames. The DataFrames are merged on the corresponding columns 'category' and 'subcategory'. The columns 'staff_pick', 'spotlight', 'category & sub-category', 'category', and 'subcategory' are dropped from the final DataFrame.
 
-![Campaign After](./dataframe_after.png)
+The final campaign DataFrame resembles the following:
+
+![post-processing df](./post-processing.png)
 
 ### Create the Contacts DataFrame
 
