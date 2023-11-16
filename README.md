@@ -4,7 +4,27 @@ Building an ETL pipeline using Python, Pandas, and dictionary methods/regular ex
 
 After data is transformed, four CSV files are created and used to plot an entity relationship diagram and a table schema.  
 
-#### Create the Contacts DataFrame
+### Create the Category and Subcategory DataFrames 
+
+We begin with extracting and transforming the `crowdfunding.xlsx` Excel data to create two DataFrames:
+
+A category DataFrame which contains category ids going from "cat1" to "catn" along with the unique category names.
+
+A subcategory DataFrame which contains subcategory ids going from "subcat1" to "subcatn" along with the unique subcategory names.
+
+We convert the DataFrames containing the data for the categories and subcategories into CSVs and reupload them.
+
+### Create the Campaign DataFrame
+
+This DataFrame requires us to modify the `crowdfunding.xlsx` Excel data. The initial format of the data appears as:
+
+![Campaign Before](./dataframe_before.png)
+
+Certain columns are to be renamed only, while others are both renamed and converted to a different data format. The final campaign DataFrame resembles the following:
+
+![Campaign After](./dataframe_after.png)
+
+### Create the Contacts DataFrame
 
 Choose one of the following two options for extracting and transforming the data from the  `contacts.xlsx.`
 
