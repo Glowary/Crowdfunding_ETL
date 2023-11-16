@@ -8,9 +8,9 @@ After data is transformed, four CSV files are created and used to plot an entity
 
 We begin with extracting and transforming the `crowdfunding.xlsx` Excel data to create two DataFrames:
 
-A category DataFrame which contains category ids going from "cat1" to "catn" along with the unique category names.
+A category DataFrame that contains category ids going from "cat1" to "catn" along with the unique category names.
 
-A subcategory DataFrame which contains subcategory ids going from "subcat1" to "subcatn" along with the unique subcategory names.
+A subcategory DataFrame contains subcategory ids going from "subcat1" to "subcatn" along with the unique subcategory names.
 
 We convert the DataFrames containing the data for the categories and subcategories into CSVs and reupload them.
 
@@ -64,4 +64,7 @@ Final DataFrame should resemble:
  - Create and Verify Tables  
 	 - Execute the SQL schema file within the `crowdfunding_db` database in the correct order. Run `SELECT` statements for each table to verify if they have been created correctly.  
  - Import and Verify CSV File:  
-	 - Import data from the CSV files into the corresponding tables. Run `SELECT` statements for each table to ensure the data is imported correctly.
+	 - Import data from the CSV files into the corresponding tables. Run `SELECT` statements for each table to ensure the data is imported correctly.  
+
+ ## Reference ##  
+ [regex](https://www.datacamp.com/tutorial/regex-r-regular-expressions-guide), [str_extract](https://stringr.tidyverse.org/reference/str_extract.html), [str_split](https://www.w3schools.com/python/ref_string_split.asp)
